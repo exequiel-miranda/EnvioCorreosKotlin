@@ -9,7 +9,7 @@ Para esto, debemos cambiarnos al modo de vista "Project" </br>
 Y en la carpeta "app" damos clic derecho -> New -> Directory  </br>
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/ba0bf621-296b-46a3-a97b-7ebac774a335) </br>
 Y creamos una carpeta llamada "libs" </br>
-Dentro de esta nueva carpeta llamada "libs" vamos a agregar estas tres liberrias que las peuden descargar desde este enlace: </br>
+Dentro de esta nueva carpeta llamada "libs" vamos a agregar estas tres liberrias que las pueden descargar desde este enlace: </br>
 https://drive.google.com/drive/folders/10gvjDG2wxwaTutw6p1UT4pE0I_SsyWQN?usp=sharing  </br>
 Una vez descargadas las arrastramos a nuestra carpeta "libs" </br>
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/fc2fc91d-f575-44de-9947-0963b875813b) </br>
@@ -21,7 +21,8 @@ Si hicimos todo bien les debe quedar asi: </br>
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/4a116e90-f4f0-4c59-8d83-7178fca7c254) </br>
 a nivel de proyecto, la carpeta "libs" y con las tres librerias con esa flecha </br>
  </br>
-Asi es como agregamos librerias de archivo, es la diferencia a como las agregamos siempre desde internet </br>
+ Resultado final:
+Asi es como agregamos librerias de archivo, es la diferencia a como las agregamos siempre desde internet (esta captura es de ejemplo de como queda en el build.gradle)</br>
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/41c91207-247f-4888-afb7-b619eb34ab11) </br>
 
 Entonces, cuando copiemos el código, si tenemos que importar librerias, nos aseguramos que sean las de java.mail (las librerias que acabamos de poner) </br>
