@@ -45,6 +45,9 @@ No colocaremos nuestra contraseña con la que iniciamos sesión, tenemos que gen
 
 No coloquen su correo personal con su contraseña de aplicaciones aqui, si bien alguien más no podrá iniciar sesión si que podrá enviar correos electrónicos con su cuenta, entonces lo que recomiendo es crear una cuenta de correo de pruebas o con el nombre de su PTC, nunca colocar credenciales personales y subirlas a GitHub
 
+Y como tercer y ultimo paso, hacemos el envío del correo
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/fa3102ee-a7fa-45d6-8f01-595a25fbc94f)
+
 
    //Codigo para generar un número aleatorio (código de recuperación) </br>
         val codigoRecuperacion = (1000..9999).random()
