@@ -30,10 +30,20 @@ Entonces, cuando copiemos el código, si tenemos que importar librerias, nos ase
 
  </br>
 
+Una vez agregadas la liberias, crearemos una clase para colocar todo el código para enviar correo eletrónicos, esta clase tendrá una función suspendida que recibirá el receptor, asunto y mensaje del correo electrónico
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/6bbbf87f-5d3a-4855-b607-42ac4278d074)
+
+Luego, dentro de esta función, realizaremos tres pasos para enviar el correo electrónico
+1- Configuración del servidor SMTP
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/db2fb39d-7779-4519-a863-ee4764553e77)
+
+2- Iniciamos Sesión
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/aa31a8c5-f1a1-489a-b492-f4ae6bbaef7c)
+
+No colocaremos nuestra contraseña con la que iniciamos sesión, tenemos que generar una "contraseña de aplicaciónes" que es como un token de acceso pero no nuestra contraseña real 
 # M U Y    🚨    I M P O R T A N T E    🚨  </br>
 
 No coloquen su correo personal con su contraseña de aplicaciones aqui, si bien alguien más no podrá iniciar sesión si que podrá enviar correos electrónicos con su cuenta, entonces lo que recomiendo es crear una cuenta de correo de pruebas o con el nombre de su PTC, nunca colocar credenciales personales y subirlas a GitHub
-
 
 
    //Codigo para generar un número aleatorio (código de recuperación) </br>
