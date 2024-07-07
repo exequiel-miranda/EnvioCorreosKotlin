@@ -2,14 +2,14 @@
 
 * Cosas importantes antes de comenzar: </br>
 
-Para que esteproyecto funcione necesitamos agregar tres librerias, (activation, additional y mail) </br>
+Para que este proyecto funcione necesitamos agregar tres librerias, (activation, additional y mail) </br>
 Para esto, debemos cambiarnos al modo de vista "Project" </br>
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/3db57d01-676e-4a01-9e03-8b473aeb1560) </br>
 
 Y en la carpeta "app" damos clic derecho -> New -> Directory  </br>
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/ba0bf621-296b-46a3-a97b-7ebac774a335) </br>
 Y creamos una carpeta llamada "libs" </br>
-Dentro de esta nueva carpeta llamada "libs" vamos a agregar estas tres liberrias que las pueden descargar desde este enlace: </br>
+Dentro de esta nueva carpeta llamada "libs" vamos a agregar estas tres liberias que las pueden descargar desde este enlace: </br>
 https://drive.google.com/drive/folders/10gvjDG2wxwaTutw6p1UT4pE0I_SsyWQN?usp=sharing  </br>
 Una vez descargadas las arrastramos a nuestra carpeta "libs" </br>
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/fc2fc91d-f575-44de-9947-0963b875813b) </br>
@@ -75,11 +75,12 @@ Si subirán el repositorio aqui a GitHub no coloquen su correo personal con su c
  <hr>
 
 Y por ultimo, Paso 3- Y como tercer y ultimo paso, hacemos el envío del correo</br>
-![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/fa3102ee-a7fa-45d6-8f01-595a25fbc94f)
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/fa3102ee-a7fa-45d6-8f01-595a25fbc94f)</br>
+Aqui tomamos quien lo envia, quien lo va a recibir, el asunto y el mensaje, lo unimos todo en una variable llamada "message"</br>
+Y luego lo enviamos con Transport.send</br>
+</br></br>
 
 
-
-[Repositorio en mantenimiento]
-Pendiente: como usar esta clase para enviar el correo
-   //Codigo para generar un número aleatorio (código de recuperación) </br>
-        val codigoRecuperacion = (1000..9999).random()
+# Como enviar el correo electrónico
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/7ba59cee-da7d-407d-b866-80c99f8d405c)</br>
+Este es un código básico de ejemplo, donde yo escribo el correo a quien se lo enviaré ustedes pueden usar el correo que el usuario escribió, pueden cambiar el asunto, pueden cambiar el mensaje y ponerle lo que ustedes quieran</br>
