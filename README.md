@@ -30,5 +30,11 @@ Entonces, cuando copiemos el código, si tenemos que importar librerias, nos ase
 
  </br>
 
+# M U Y    🚨    I M P O R T A N T E    🚨  </br>
+
+No coloquen su correo personal con su contraseña de aplicaciones aqui, si bien alguien más no podrá iniciar sesión si que podrá enviar correos electrónicos con su cuenta, entonces lo que recomiendo es crear una cuenta de correo de pruebas o con el nombre de su PTC, nunca colocar credenciales personales y subirlas a GitHub
+
+
+
    //Codigo para generar un número aleatorio (código de recuperación) </br>
         val codigoRecuperacion = (1000..9999).random()
