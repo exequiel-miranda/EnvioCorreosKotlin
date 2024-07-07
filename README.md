@@ -40,7 +40,7 @@ esta clase tendrá una función suspendida que recibirá el receptor, asunto y m
 
 
 Luego, dentro de esta función suspendida de arriba, realizaremos tres pasos para enviar el correo electrónico</br>
-1- Configuración del servidor SMTP</br>
+Paso 1- Configuración del servidor SMTP</br>
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/db2fb39d-7779-4519-a863-ee4764553e77)</br>
 Por lo general, estas variables no cambian, son para configurar:</br>
 put("mail.smtp.host", "smtp.gmail.com"): Establece el servidor SMTP que se va a usar. En este caso, es el servidor SMTP de Gmail.</br>
@@ -49,17 +49,37 @@ put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory"): Define l
 put("mail.smtp.auth", "true"): Indica que se requiere autenticación para el envío de correos. Esto significa que deberás proporcionar un nombre de usuario y una contraseña.</br>
 put("mail.smtp.port", "465"): Especifica el puerto del servidor SMTP, que en este caso también es 465 para SSL.</br>
 
-2- Iniciamos Sesión
+Paso 2- Iniciamos Sesión
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/aa31a8c5-f1a1-489a-b492-f4ae6bbaef7c)
 
-No colocaremos nuestra contraseña con la que iniciamos sesión, tenemos que generar una "contraseña de aplicaciónes" que es como un token de acceso pero no nuestra contraseña real 
+No colocaremos nuestra contraseña con la que iniciamos sesión, tenemos que generar una "contraseña de aplicaciónes" que es como un token de acceso pero no nuestra contraseña real </br>
+Para obtener nuestra contraseña de aplicaciones debemos:</br>
+En Gmail, dar clic en nuestra foto y luego en "Gestionar tu cuenta de Google"</br>
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/32bb48ad-f264-40cd-ad95-866ba23b4339)</br>
+
+Y antes! pequeño parentesis, tenemos que tener habilitada la verificación de dos pasos, si no la tenemos, la habilitamos (No omitir este paso y comprobar que si está habilitada antes de seguir)</br>
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/3066b42e-ed3e-4a1e-9833-a78f5a2093a5)</br>
+Luego, en la barra de busqueda escribirmos "contraseña de aplicacion"</br>
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/bd60fe99-7efc-4e59-ba05-beb9a5082cb9)</br>
+y entramos ahi</br>
+Nos mostrará un apartado con información y un campo para escribir el nombre de nuestra aplicación (puede ser cualquier nombre) y presionamos en "Crear"</br>
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/46570c04-47b0-484a-bdec-53381f82ede7)</br>
+Nos genera una contraseña  debemos copiarla</br>
+![Captura de pantalla 2024-07-06 235111](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/ce278a30-5045-4806-97f4-ae050b5fcde8)</br>
+Y esta es la que debemos copiar y pegar en la contraseña para iniciar sesión (no quitar los espacios)</br>
+![Captura de pantalla 2024-07-06 235648](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/64da537f-a2a8-4c6f-8dcd-a959e627f83f)</br>
+
 # M U Y    🚨    I M P O R T A N T E    🚨  </br>
 
-Si subirán el repositorio aqui a GitHub no coloquen su correo personal con su contraseña de aplicaciones aqui, si bien alguien más no podrá iniciar sesión si que podrá enviar correos electrónicos con su cuenta, entonces lo que recomiendo es crear una cuenta de correo de pruebas o con el nombre de su PTC, nunca colocar credenciales personales y subirlas a GitHub
+Si subirán el repositorio aqui a GitHub no coloquen su correo personal con su contraseña de aplicaciones aqui, si bien alguien más no podrá iniciar sesión si que podrá enviar correos electrónicos con su cuenta, entonces lo que recomiendo es crear una cuenta de correo de pruebas o con el nombre de su PTC, nunca colocar credenciales personales y subirlas a GitHub</br>
+ <hr>
 
-Y como tercer y ultimo paso, hacemos el envío del correo
+Y por ultimo, Paso 3- Y como tercer y ultimo paso, hacemos el envío del correo</br>
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/fa3102ee-a7fa-45d6-8f01-595a25fbc94f)
 
 
+
+[Repositorio en mantenimiento]
+Pendiente: como usar esta clase para enviar el correo
    //Codigo para generar un número aleatorio (código de recuperación) </br>
         val codigoRecuperacion = (1000..9999).random()
