@@ -28,14 +28,26 @@ Asi es como agregamos librerias de archivo, es la diferencia a como las agregamo
 Entonces, cuando copiemos el código, si tenemos que importar librerias, nos aseguramos que sean las de java.mail (las librerias que acabamos de poner) </br>
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/522ec2fc-59e2-4d46-b73b-8cb725bc78e9) </br>
 
- </br>
+ </br></br></br>
+ <hr>
 
-Una vez agregadas la liberias, crearemos una clase para colocar todo el código para enviar correo eletrónicos, esta clase tendrá una función suspendida que recibirá el receptor, asunto y mensaje del correo electrónico
-![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/6bbbf87f-5d3a-4855-b607-42ac4278d074)
+Una vez agregadas la liberias, crearemos una clase para colocar todo el código para enviar correo eletrónicos</br>
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/c48d2300-d50c-40ea-8170-6e0484762b7c)</br>
+esta clase tendrá una función suspendida que recibirá el receptor, asunto y mensaje del correo electrónico</br>
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/6bbbf87f-5d3a-4855-b607-42ac4278d074)</br>
+(Que es basicamente lo que escribimos al enviar un correo, receptor, asunto y el mensaje)</br>
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/7d13350f-4bc6-4fd7-9a27-f4c6f058c906)</br>
 
-Luego, dentro de esta función, realizaremos tres pasos para enviar el correo electrónico
-1- Configuración del servidor SMTP
-![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/db2fb39d-7779-4519-a863-ee4764553e77)
+
+Luego, dentro de esta función suspendida de arriba, realizaremos tres pasos para enviar el correo electrónico</br>
+1- Configuración del servidor SMTP</br>
+![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/db2fb39d-7779-4519-a863-ee4764553e77)</br>
+Por lo general, estas variables no cambian, son para configurar:</br>
+put("mail.smtp.host", "smtp.gmail.com"): Establece el servidor SMTP que se va a usar. En este caso, es el servidor SMTP de Gmail.</br>
+put("mail.smtp.socketFactory.port", "465"): Configura el puerto del servidor SMTP. El puerto 465 se utiliza para conexiones seguras (SSL).</br>
+put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory"): Define la clase que se utilizará para crear sockets seguros (SSL).</br>
+put("mail.smtp.auth", "true"): Indica que se requiere autenticación para el envío de correos. Esto significa que deberás proporcionar un nombre de usuario y una contraseña.</br>
+put("mail.smtp.port", "465"): Especifica el puerto del servidor SMTP, que en este caso también es 465 para SSL.</br>
 
 2- Iniciamos Sesión
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/aa31a8c5-f1a1-489a-b492-f4ae6bbaef7c)
@@ -43,7 +55,7 @@ Luego, dentro de esta función, realizaremos tres pasos para enviar el correo el
 No colocaremos nuestra contraseña con la que iniciamos sesión, tenemos que generar una "contraseña de aplicaciónes" que es como un token de acceso pero no nuestra contraseña real 
 # M U Y    🚨    I M P O R T A N T E    🚨  </br>
 
-No coloquen su correo personal con su contraseña de aplicaciones aqui, si bien alguien más no podrá iniciar sesión si que podrá enviar correos electrónicos con su cuenta, entonces lo que recomiendo es crear una cuenta de correo de pruebas o con el nombre de su PTC, nunca colocar credenciales personales y subirlas a GitHub
+Si subirán el repositorio aqui a GitHub no coloquen su correo personal con su contraseña de aplicaciones aqui, si bien alguien más no podrá iniciar sesión si que podrá enviar correos electrónicos con su cuenta, entonces lo que recomiendo es crear una cuenta de correo de pruebas o con el nombre de su PTC, nunca colocar credenciales personales y subirlas a GitHub
 
 Y como tercer y ultimo paso, hacemos el envío del correo
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/fa3102ee-a7fa-45d6-8f01-595a25fbc94f)
