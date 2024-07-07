@@ -42,6 +42,6 @@ suspend fun enviarCorreo(receptor: String, sujeto: String, mensaje: String) = wi
         println("Correo enviado satisfactoriamente")
     } catch (e: MessagingException) {
         e.printStackTrace()
-        println("CORREO NO ENVIADO")
+        println("CORREO NO ENVIADO EXE")
     }
 }
