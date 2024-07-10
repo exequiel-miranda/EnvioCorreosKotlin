@@ -84,3 +84,8 @@ Y luego lo enviamos con Transport.send</br>
 # Como enviar el correo electrónico
 ![image](https://github.com/exequiel-miranda/EnvioCorreosKotlin/assets/94820436/7ba59cee-da7d-407d-b866-80c99f8d405c)</br>
 Este es un código básico de ejemplo, donde yo escribo el correo a quien se lo enviaré ustedes pueden usar el correo que el usuario escribió, pueden cambiar el asunto, pueden cambiar el mensaje y ponerle lo que ustedes quieran</br>
+</br>
+PD: como generar un código aleatorio que podemos enviar como código de recuperación:</br>
+```Kotlin
+   val codigoAleatorio = (100000..999999).random()
+```
